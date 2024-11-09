@@ -1,12 +1,9 @@
-/* General Style*/
-
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lily+Script+One&family=Oleo+Script:wght@400;700&family=Playwrite+DE+Grund:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika+Negative:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Signika+Negative:wght@300..700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  /*border: red solid 1px;*/
 }
 
 body {
@@ -52,14 +49,14 @@ nav {
 }
 
 nav ul {
-    list-style-type: none; /* Removes bullet points */
-    display: flex; /* Aligns items horizontally */
+    list-style-type: none; 
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    margin: 0 15px; /* Adds space between items */
+    margin: 0 15px;
 }
 
 nav a {
@@ -157,7 +154,7 @@ nav a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 500px;
 }
 
 .hamburger-icon.open span:first-child {
@@ -196,6 +193,7 @@ nav a:hover {
     padding: 60px 0;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    flex-wrap: wrap;
 }
 
 .about-text {
@@ -216,6 +214,116 @@ nav a:hover {
     width: 300px;
     border-radius: 10px;
 }
+/* Dogs Section */
+.Dogs {
+    text-align: center;
+    background-color: #493628;
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Dogs h1 {
+    font-family: "Lily Script One", system-ui;
+    font-size: 2em;
+    color: #FFEEF4;
+    margin-bottom: 20px;
+}
+.Dogs h3 {
+    font-size: 1.5em;
+    background-color:#EDDFE0 ;
+    color: #493628;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.dog-description {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 16px;
+    color: #493628;
+    padding: 8px;
+    background-color: #EDDFE0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #493628;
+}
+
+
 
 /*Favorites Section*/
 
@@ -235,18 +343,17 @@ nav a:hover {
     font-size: 2em;
 }
 
-/* Wrapper for cards, arranged horizontally */
 .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Adjust spacing between cards */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 .single-card {
-    width: 300px; /* Adjusted card width */
-    height: 400px; /* Adjusted card height */
+    width: 300px; 
+    height: 400px; 
     perspective: 1000px;
     transition: transform 0.6s;
     border-radius: 10px;
@@ -388,13 +495,13 @@ nav a:hover {
 }
 
 .icon {
-    width: 40px; /* Set a fixed width for icons */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
+    width: 40px; 
+    height: auto;
+    transition: transform 0.3s;
 }
 
 .icon:hover {
     background-color: #F5F5F7;
     border-radius: 15px;
-    transform: scale(1.1); /* Slightly enlarge icon on hover */
+    transform: scale(1.1);
 }

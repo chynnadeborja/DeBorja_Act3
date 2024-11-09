@@ -15,6 +15,7 @@
             <div>
               <ul class="nav-links">
                 <li><a href="#abt-section">About</a></li>
+                <li><a href="#dogs-section">Dogs</a></li>
                 <li><a href="#fav-section">Favorites</a></li>
                 <li><a href="#bus-section">Business</a></li>
                 <li><a href="#cont-section">Contacts</a></li>
@@ -31,6 +32,7 @@
               </div>
               <div class="menu-links">
                 <li><a href="#abt-section" onclick="toggleMenu()">About</a></li>
+                <li><a href="#dogs-section" onclick="toggleMenu()">Dogs</a></li>
                 <li><a href="#fav-section" onclick="toggleMenu()">Favorites</a></li>
                 <li><a href="#bus-section" onclick="toggleMenu()">Business</a></li>
                 <li><a href="#cont-section" onclick="toggleMenu()">Contacts</a></li>
@@ -51,6 +53,44 @@
             <img src="chy.jpg" alt="Author">
         </div>
     </section>
+
+<!--Dogs Section-->
+<!-- Dogs Section -->
+<!-- Dogs Section -->
+<section id="dogs-section" class="Dogs">
+    <h1>My Dogs</h1>
+    <div class="slider-container">
+        <button class="slider-button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slides">
+            <div class="slide">
+                <img src="maka.jpg" alt="Dog 1" />
+                <h3>Makachin</h3>
+                <p class="dog-description"> Makachin is our senior dog, who joined our family back when I was a 
+                    freshman in high school. He’s incredibly sweet, but he hates showering..</p>
+            </div>
+            <div class="slide">
+                <img src="patchy.jpg" alt="Dog 2" />
+                <h3>Patchy</h3>
+                <p class="dog-description">Patchy was a gift to me. She's very sweet and loves to cuddle, 
+                    although she can be a bit stubborn at times. Recently, she lost one of her eyes after a fight with a neighbor's cat.
+                 </p>
+            </div>
+            <div class="slide">
+                <img src="snowy.jpg" alt="Dog 3" />
+                <h3>Snowy</h3>
+                <p class="dog-description">Snowy is our baby dog and the daughter of Makachin and Patchy. She
+                     inherited Makachin's sweetness and Patchy’s stubbornness. Luckily, she loves showering!
+                </p>
+            </div>
+        </div>
+        <button class="slider-button next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <div class="dots-container">
+        <span class="dot" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+    </div>
+</section>
 
     <!--Favorites Section-->
     <section id="fav-section" class="Favorites">
