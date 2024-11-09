@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" , intial-scale="1.0" />
+    <title>Chy Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <header>
+
+        <nav id="desktop-nav">
+            <div class="logo">Bits of Yna</div>
+            <div>
+              <ul class="nav-links">
+                <li><a href="#abt-section">About</a></li>
+                <li><a href="#fav-section">Favorites</a></li>
+                <li><a href="#bus-section">Business</a></li>
+                <li><a href="#cont-section">Contacts</a></li>
+              </ul>
+            </div>
+          </nav>
+          <nav id="hamburger-nav">
+            <div class="logo">Bits of Yna</div>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="#abt-section" onclick="toggleMenu()">About</a></li>
+                <li><a href="#fav-section" onclick="toggleMenu()">Favorites</a></li>
+                <li><a href="#bus-section" onclick="toggleMenu()">Business</a></li>
+                <li><a href="#cont-section" onclick="toggleMenu()">Contacts</a></li>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!--About Section-->
+    <section id ="about" class="About">
+        <div class="about-text">
+            <h2>About the Author</h2>
+            <p>Hi everyone! I'm Chynna Mae B. de Borja, a 3rd year Information System student in 
+                Technological University of the Philipphines Manila. I'm 21 year old turning 22 on December 12.
+                I'm from the province of Laguna.</p>
+        </div>
+        <div class="about-image">
+            <img src="chy.jpg" alt="Author">
+        </div>
+    </section>
+
+    <!--Favorites Section-->
+    <section id="fav-section" class="Favorites">
+        <h1>My Favorites</h1>
+        <div class="wrapper">
+            <!-- First Card -->
+            <div class="single-card">
+                <div class="card-inner">
+                    <div class="front front1"></div>
+                    <div class="back">
+                        <div class="content">
+                            <h2>Adobo</h2>
+                            <p>I love adobo because it feels like home. There's just something about the way my mom makes it that makes it extra special—she adds potato and pineapple, which might sound unusual to some, but for me, it’s perfect. Every time I take a bite, it’s like I’m right back at the family table, surrounded by the warmth and comfort of home. It's more than just food; it’s all the love and memories that come with it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Second Card -->
+            <div class="single-card">
+                <div class="card-inner">
+                    <div class="front front2"></div>
+                    <div class="back">
+                        <div class="content">
+                            <h2>Did you like her in the morning? - NIKI</h2>
+                            <p>I love Did You Like Her in the Morning? because it taps into that raw vulnerability, that bittersweet complexity of relationships. It brings out the feeling of being haunted by questions and self-doubt, wondering what someone else might have felt or thought. There's something painfully beautiful about it—how the lyrics capture that tension of wanting to know but being scared of the answer. It feels like the song is speaking directly to me, giving voice to those quiet insecurities and almost reading straight from the pages of my own journal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Third Card -->
+            <div class="single-card">
+                <div class="card-inner">
+                    <div class="front front3"></div>
+                    <div class="back">
+                        <div class="content">
+                            <h2>Game of Thrones</h2>
+                            <p>I love Game of Thrones because it’s this incredible mix of complex characters, unpredictable storylines, and high-stakes drama that keeps me hooked. There’s something about the way the show dives into power, loyalty, and betrayal—it’s messy and brutal, but also so human. I get completely drawn into the world of Westeros, where anyone could win or lose it all in a heartbeat. The alliances, the battles, the shock of unexpected deaths—it all keeps me on the edge of my seat. Plus, it doesn’t hurt that the visuals and storytelling are just epic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<!--Business Section-->
+<section id="bus-section" class="Business">
+    <div class="business-content">
+        <div class="business-image">
+            <a href="https://www.instagram.com/beadabeada.bds/" target="_blank">
+            <img src="page.jpg" alt="logo">
+            </a>
+        </div>
+        <div class="business-text">
+            <h3>Beadabeada.bds</h3>
+            <p>This is my business page. I'm into crafts and last year
+                my friends encouraged me to sell my creations. I make handcrafted 
+                accesorries like necklace, braceletes, and keychains. 
+                
+                Click the image to see some of my works!
+            </p>
+        </div>
+    </div>
+</section>
+
+<!--FOoter-->
+<footer id="cont-section" class="footer">
+    <h4>Contact Me</h4>
+    <div class="footer-links">
+        <div class="social-icons">
+            <a href="https://github.com/chynnadeborja" target="_blank" aria-label="My Github Profile">
+                <img src="git.png" alt="My Github Profile" class="icon" />
+            </a>
+            <a href="https://www.facebook.com/taaaaaina/" target="_blank" aria-label="My Facebook Profile">
+                <img src="fb.png" alt="My Facebook Profile" class="icon" />
+            </a>
+            <a href="mailto:chynnadeborja@gmail.com" target="_blank" aria-label="My Email Account">
+                <img src="gmail.png" alt="My Email Account" class="icon" />
+            </a>
+        </div>
+
+    </div>
+</footer>
+<script src="script.js"></script>
+</html>
