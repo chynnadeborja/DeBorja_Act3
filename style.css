@@ -339,8 +339,12 @@ nav a:hover {
 
 .Favorites h1 {
     font-family: "Lily Script One", system-ui;
+    background-color: #EDDFE0;
     margin-bottom: 20px;
     font-size: 2em;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px; 
 }
 
 .wrapper {
